@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Small-batch specialty coffee, roasted weekly and served warm at Ember & Bean, 24 Harbour Lane, Sydney.">
+    <meta property="og:title" content="Ember & Bean | Specialty Coffee Roasters">
+    <meta property="og:description" content="Roasted slow. Served warm. Visit our neighbourhood cafe at 24 Harbour Lane, Sydney.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://emberandbean.example">
+    <title>Ember &amp; Bean | Roasted slow. Served warm.</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='24' fill='%2314100D'/%3E%3Ctext x='24' y='34' text-anchor='middle' font-family='Georgia,serif' font-size='32' fill='%23F2EBDF'%3EE%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Ember & Bean home">Ember <span>&amp;</span> Bean</a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+      <nav class="menu-overlay" id="site-menu" aria-label="Main navigation" inert>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Specialty Coffee Roasters</p>
+          <h1 id="hero-title">Roasted slow.<br>Served warm.</h1>
+          <p class="hero-copy">Good coffee, made with care and shared around the neighbourhood.</p>
+          <div class="button-row">
+            <a class="button button-light" href="#menu">View menu</a>
+            <a class="button button-outline" href="#visit">Find us</a>
+          </div>
+        </div>
+        <span class="hero-note">24 Harbour Lane, Sydney</span>
+      </section>
+
+      <section class="story section-pad" id="story" aria-labelledby="story-title">
+        <div class="story-image media-frame reveal">
+          <svg class="illustration" viewBox="0 0 800 960" role="img" aria-labelledby="roastery-art-title">
+            <title id="roastery-art-title">Illustration of a small-batch coffee roaster</title>
+            <rect width="800" height="960" fill="#30231b"/>
+            <rect y="700" width="800" height="260" fill="#795035"/>
+            <rect x="118" y="250" width="450" height="345" rx="18" fill="#171310"/>
+            <circle cx="340" cy="422" r="138" fill="#b8763e"/>
+            <circle cx="340" cy="422" r="103" fill="#58351f"/>
+            <circle cx="340" cy="422" r="65" fill="#c38a52"/>
+            <path d="M340 326c-30 29-20 54 9 66 32 13 38 38 4 70-13 12-31 23-49 29 57-2 101-45 101-101 0-33-21-53-65-64z" fill="#493326"/>
+            <rect x="493" y="360" width="95" height="125" rx="9" fill="#e0b67e"/>
+            <path d="M588 384h34a34 34 0 0 1 0 68h-34" fill="none" stroke="#e0b67e" stroke-width="16"/>
+            <path d="M180 595v70m325-70v70M200 700l70-35m210 35-70-35" stroke="#171310" stroke-width="24"/>
+            <path d="M210 195c-32-45 34-58 8-104m122 104c-32-45 34-58 8-104" fill="none" stroke="#b5a99a" stroke-width="10" stroke-linecap="round"/>
+            <g fill="#58351f"><ellipse cx="150" cy="810" rx="22" ry="13" transform="rotate(30 150 810)"/><ellipse cx="220" cy="860" rx="22" ry="13" transform="rotate(-24 220 860)"/><ellipse cx="300" cy="805" rx="22" ry="13" transform="rotate(18 300 805)"/><ellipse cx="410" cy="870" rx="22" ry="13" transform="rotate(-30 410 870)"/><ellipse cx="515" cy="810" rx="22" ry="13" transform="rotate(24 515 810)"/></g>
+          </svg>
+        </div>
+        <div class="story-copy reveal">
+          <p class="eyebrow">A little about us</p>
+          <h2 id="story-title">Made with patience.<br>Shared close to home.</h2>
+          <p>We roast in small batches, giving every coffee the time it needs to find its balance. Our beans come from people who care for the land as much as the cup. At Harbour Lane, there is always room for one more at the table.</p>
+          <div class="story-stats" aria-label="Our approach">
+            <span>Small batch</span>
+            <span>Single origin</span>
+            <span>Roasted weekly</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section section-pad" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">A good place to start</p>
+            <h2 id="menu-title">The menu</h2>
+          </div>
+          <p>Seasonal coffees and a few things from the kitchen.</p>
+        </div>
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab" id="tab-coffee" type="button" role="tab" aria-selected="true" aria-controls="panel-coffee" tabindex="0">Coffee</button>
+          <button class="menu-tab" id="tab-brews" type="button" role="tab" aria-selected="false" aria-controls="panel-brews" tabindex="-1">Brews</button>
+          <button class="menu-tab" id="tab-food" type="button" role="tab" aria-selected="false" aria-controls="panel-food" tabindex="-1">Food</button>
+        </div>
+        <div class="menu-panel" id="panel-coffee" role="tabpanel" aria-labelledby="tab-coffee" tabindex="0">
+          <div class="menu-item"><div><h3>Flat White</h3><p>Double espresso, silky steamed milk</p></div><span class="price">$4.80</span></div>
+          <div class="menu-item"><div><h3>Long Black</h3><p>Espresso over hot water</p></div><span class="price">$4.50</span></div>
+          <div class="menu-item"><div><h3>Piccolo</h3><p>Ristretto with textured milk</p></div><span class="price">$4.50</span></div>
+          <div class="menu-item"><div><h3>Cappuccino</h3><p>Espresso, steamed milk, soft cocoa</p></div><span class="price">$4.80</span></div>
+          <div class="menu-item"><div><h3>Mocha</h3><p>House chocolate, espresso, steamed milk</p></div><span class="price">$5.50</span></div>
+          <div class="menu-item"><div><h3>Single Origin Filter</h3><p>Today's coffee, brewed to order</p></div><span class="price">$6.00</span></div>
+        </div>
+        <div class="menu-panel" id="panel-brews" role="tabpanel" aria-labelledby="tab-brews" tabindex="0" hidden>
+          <div class="menu-item"><div><h3>Batch Brew</h3><p>Today's filter, bright and balanced</p></div><span class="price">$5.00</span></div>
+          <div class="menu-item"><div><h3>V60 Pour Over</h3><p>Single origin, carefully poured</p></div><span class="price">$6.50</span></div>
+          <div class="menu-item"><div><h3>Aeropress</h3><p>Full-bodied and clean</p></div><span class="price">$6.00</span></div>
+          <div class="menu-item"><div><h3>Cold Brew</h3><p>Slow-steeped for 18 hours</p></div><span class="price">$6.00</span></div>
+          <div class="menu-item"><div><h3>Espresso Tonic</h3><p>House espresso, crisp tonic</p></div><span class="price">$7.00</span></div>
+          <div class="menu-item"><div><h3>Drinking Chocolate</h3><p>Rich cocoa, gently steamed milk</p></div><span class="price">$5.50</span></div>
+        </div>
+        <div class="menu-panel" id="panel-food" role="tabpanel" aria-labelledby="tab-food" tabindex="0" hidden>
+          <div class="menu-item"><div><h3>Butter Croissant</h3><p>Flaky, baked fresh each morning</p></div><span class="price">$6.00</span></div>
+          <div class="menu-item"><div><h3>Banana Bread</h3><p>Toasted with cultured butter</p></div><span class="price">$6.50</span></div>
+          <div class="menu-item"><div><h3>Seasonal Danish</h3><p>Fruit and pastry from our kitchen</p></div><span class="price">$7.00</span></div>
+          <div class="menu-item"><div><h3>Avocado Toast</h3><p>Sourdough, lemon, garden herbs</p></div><span class="price">$14.00</span></div>
+          <div class="menu-item"><div><h3>Ham &amp; Cheese Toastie</h3><p>Leg ham, aged cheddar, mustard</p></div><span class="price">$13.50</span></div>
+          <div class="menu-item"><div><h3>Granola Bowl</h3><p>House granola, yoghurt, seasonal fruit</p></div><span class="price">$12.00</span></div>
+        </div>
+        <p class="menu-footnote">Prices in AUD. Please ask us about dietary requirements.</p>
+      </section>
+
+      <section class="signature-section section-pad" aria-labelledby="signature-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">From our bar</p>
+            <h2 id="signature-title">Worth lingering over</h2>
+          </div>
+          <p>A few house favourites, made fresh each day.</p>
+        </div>
+        <div class="signature-grid">
+          <article class="signature-card reveal">
+            <div class="card-image media-frame">
+              <svg class="illustration" viewBox="0 0 900 700" role="img" aria-labelledby="pastry-art-title">
+                <title id="pastry-art-title">Illustration of a freshly baked croissant</title>
+                <rect width="900" height="700" fill="#493326"/>
+                <rect y="495" width="900" height="205" fill="#795035"/>
+                <ellipse cx="450" cy="515" rx="300" ry="44" fill="#30231b"/>
+                <path d="M210 450c35-152 146-220 240-110 94-110 205-42 240 110-65 58-131 76-240 65-109 11-175-7-240-65z" fill="#d49a58"/>
+                <path d="M265 440c44-117 111-151 185-79 74-72 141-38 185 79-57 34-116 46-185 36-69 10-128-2-185-36z" fill="#e3b873"/>
+                <path d="M348 355c-28 48-44 99-47 143m122-172c-17 50-24 100-21 151m95-151c18 50 25 100 22 151m82-122c28 48 44 99 47 143" fill="none" stroke="#b8763e" stroke-width="14" stroke-linecap="round"/>
+                <path d="M128 560h644" stroke="#e0b67e" stroke-width="8"/>
+              </svg>
+            </div>
+            <div class="card-copy"><h3>Morning pastry</h3><p>Layers of butter, baked here each morning.</p><span class="price">$6.00</span></div>
+          </article>
+          <article class="signature-card reveal">
+            <div class="card-image media-frame">
+              <svg class="illustration" viewBox="0 0 900 700" role="img" aria-labelledby="blend-art-title">
+                <title id="blend-art-title">Illustration of coffee beans ready to roast</title>
+                <rect width="900" height="700" fill="#30231b"/>
+                <path d="M0 520h900v180H0z" fill="#795035"/>
+                <path d="M200 190h500l-42 310H242z" fill="#b8763e"/>
+                <path d="M245 230h410v244H245z" fill="#e0b67e"/>
+                <g fill="#58351f"><ellipse cx="325" cy="300" rx="42" ry="25" transform="rotate(30 325 300)"/><ellipse cx="430" cy="285" rx="42" ry="25" transform="rotate(-22 430 285)"/><ellipse cx="530" cy="325" rx="42" ry="25" transform="rotate(18 530 325)"/><ellipse cx="365" cy="390" rx="42" ry="25" transform="rotate(-12 365 390)"/><ellipse cx="480" cy="405" rx="42" ry="25" transform="rotate(32 480 405)"/><ellipse cx="570" cy="390" rx="42" ry="25" transform="rotate(-28 570 390)"/></g>
+                <path d="M332 280l-13 40m123-56-20 42m128 1-10 44m-171 17-20 43m132-28-8 48m126-77-17 46" stroke="#b8763e" stroke-width="7" stroke-linecap="round"/>
+                <path d="M160 540h580" stroke="#e0b67e" stroke-width="12"/>
+              </svg>
+            </div>
+            <div class="card-copy"><h3>Harbour blend</h3><p>Chocolate, toasted almond and a soft finish.</p><span class="price">$18.00 / 250g</span></div>
+          </article>
+          <article class="signature-card reveal">
+            <div class="card-image media-frame">
+              <svg class="illustration" viewBox="0 0 900 700" role="img" aria-labelledby="filter-art-title">
+                <title id="filter-art-title">Illustration of a pour-over coffee being brewed</title>
+                <rect width="900" height="700" fill="#241a14"/>
+                <rect y="500" width="900" height="200" fill="#795035"/>
+                <path d="M250 195h400l-55 165H305z" fill="#e0b67e"/>
+                <path d="M285 245h330l-42 99H327z" fill="#58351f"/>
+                <path d="M340 365h220l-24 55H364z" fill="#b8763e"/>
+                <path d="M365 420h170l-17 116a35 35 0 0 1-35 30h-66a35 35 0 0 1-35-30z" fill="#e6d8c1"/>
+                <path d="M530 447h44a39 39 0 0 1 0 78h-54" fill="none" stroke="#e6d8c1" stroke-width="17"/>
+                <path d="M450 65v130m-36-94 36 94 36-94" fill="none" stroke="#b8763e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M345 582h210" stroke="#493326" stroke-width="13"/>
+              </svg>
+            </div>
+            <div class="card-copy"><h3>Seasonal filter</h3><p>One farm, one harvest, brewed by the cup.</p><span class="price">$6.00</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery-section section-pad" aria-labelledby="gallery-title">
+        <div class="gallery-heading reveal">
+          <p class="eyebrow">A look around</p>
+          <h2 id="gallery-title">At Harbour Lane</h2>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-image gallery-tall media-frame reveal" type="button" aria-label="Enlarge illustration of a sunny cafe interior">
+            <svg class="illustration" viewBox="0 0 600 900" role="img" aria-labelledby="gallery-interior-title">
+              <title id="gallery-interior-title">Illustration of a sunny cafe interior</title>
+              <rect width="600" height="900" fill="#30231b"/><rect y="610" width="600" height="290" fill="#795035"/>
+              <rect x="60" y="100" width="210" height="330" fill="#e0b67e"/><path d="M165 100v330M60 265h210" stroke="#493326" stroke-width="15"/>
+              <path d="M270 430 60 610h390z" fill="#b8763e" opacity=".5"/>
+              <rect x="145" y="535" width="320" height="28" fill="#58351f"/><path d="M175 563v215m260-215v215" stroke="#58351f" stroke-width="22"/>
+              <rect x="185" y="470" width="130" height="64" rx="8" fill="#e6d8c1"/><path d="M315 482h22a22 22 0 0 1 0 44h-22" fill="none" stroke="#e6d8c1" stroke-width="10"/>
+              <circle cx="470" cy="230" r="62" fill="#b8763e"/><path d="M425 230h90m-45-45v90" stroke="#58351f" stroke-width="8"/>
+            </svg>
+          </button>
+          <button class="gallery-image media-frame reveal" type="button" aria-label="Enlarge illustration of roasted coffee beans">
+            <svg class="illustration" viewBox="0 0 600 700" role="img" aria-labelledby="gallery-beans-title">
+              <title id="gallery-beans-title">Illustration of roasted coffee beans</title>
+              <rect width="600" height="700" fill="#493326"/><path d="M0 490h600v210H0z" fill="#795035"/>
+              <ellipse cx="300" cy="430" rx="190" ry="110" fill="#b8763e"/><ellipse cx="300" cy="408" rx="165" ry="88" fill="#e0b67e"/>
+              <g fill="#58351f"><ellipse cx="220" cy="380" rx="39" ry="24" transform="rotate(25 220 380)"/><ellipse cx="305" cy="355" rx="39" ry="24" transform="rotate(-20 305 355)"/><ellipse cx="385" cy="390" rx="39" ry="24" transform="rotate(30 385 390)"/><ellipse cx="260" cy="440" rx="39" ry="24" transform="rotate(-26 260 440)"/><ellipse cx="350" cy="445" rx="39" ry="24" transform="rotate(12 350 445)"/></g>
+              <path d="M225 359l-12 40m100-68-13 47m98-8-17 43m-130 8-18 40m110-38-10 46" stroke="#b8763e" stroke-width="7"/>
+            </svg>
+          </button>
+          <button class="gallery-image media-frame reveal" type="button" aria-label="Enlarge illustration of fresh pastries">
+            <svg class="illustration" viewBox="0 0 600 700" role="img" aria-labelledby="gallery-pastry-title">
+              <title id="gallery-pastry-title">Illustration of fresh pastries</title>
+              <rect width="600" height="700" fill="#30231b"/><rect y="500" width="600" height="200" fill="#795035"/>
+              <ellipse cx="300" cy="510" rx="220" ry="33" fill="#241a14"/>
+              <path d="M95 456c20-115 92-166 155-83 63-83 135-32 155 83-42 43-84 53-155 47-71 6-113-4-155-47z" fill="#d49a58"/>
+              <path d="M290 360c-20 43-26 91-24 142m68-142c20 43 26 91 24 142" stroke="#b8763e" stroke-width="12"/>
+              <path d="M395 466c16-85 69-123 116-61 47-62 100-24 116 61-31 32-62 39-116 35-54 4-85-3-116-35z" fill="#e0b67e" transform="translate(-55 5) scale(.82)"/>
+            </svg>
+          </button>
+          <button class="gallery-image gallery-tall media-frame reveal" type="button" aria-label="Enlarge illustration of the coffee bar and espresso cup">
+            <svg class="illustration" viewBox="0 0 600 900" role="img" aria-labelledby="gallery-bar-title">
+              <title id="gallery-bar-title">Illustration of the coffee bar and espresso cup</title>
+              <rect width="600" height="900" fill="#241a14"/><rect y="120" width="600" height="470" fill="#30231b"/>
+              <rect x="48" y="175" width="220" height="285" fill="#493326"/><path d="M158 175v285M48 315h220" stroke="#171310" stroke-width="14"/>
+              <circle cx="430" cy="255" r="95" fill="#b8763e"/><circle cx="430" cy="255" r="70" fill="#e0b67e"/>
+              <path d="M430 202c-26 18-22 51 3 55 24 3 31 29 2 52-9 8-19 13-29 17 38-2 68-31 68-68 0-30-17-48-44-56z" fill="#58351f"/>
+              <rect y="590" width="600" height="310" fill="#795035"/><rect x="75" y="650" width="340" height="120" rx="8" fill="#e6d8c1"/>
+              <path d="M415 670h36a35 35 0 0 1 0 70h-36" fill="none" stroke="#e6d8c1" stroke-width="15"/>
+              <path d="M100 650c35-45 215-45 250 0" fill="#58351f"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <dialog class="gallery-dialog" aria-labelledby="gallery-dialog-title">
+        <div class="dialog-top">
+          <h2 id="gallery-dialog-title">Gallery image</h2>
+          <button class="dialog-close" type="button" aria-label="Close enlarged image">Close</button>
+        </div>
+        <div class="dialog-art"></div>
+      </dialog>
+
+      <section class="visit-section section-pad" id="visit" aria-labelledby="visit-title">
+        <div class="visit-details reveal">
+          <p class="eyebrow">Come by</p>
+          <h2 id="visit-title">Find your way here</h2>
+          <address>24 Harbour Lane<br>Sydney NSW 2000</address>
+          <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=24+Harbour+Lane%2C+Sydney+NSW">Open in Maps</a>
+          <dl class="hours-list">
+            <div><dt>Monday to Friday</dt><dd>6:30am – 4pm</dd></div>
+            <div><dt>Saturday to Sunday</dt><dd>7am – 3pm</dd></div>
+          </dl>
+          <a class="phone-link" href="tel:+61290000000">+61 2 9000 0000</a>
+        </div>
+        <div class="map-placeholder reveal" role="img" aria-label="Map location placeholder for 24 Harbour Lane, Sydney">
+          <span class="map-label">24 Harbour Lane, Sydney</span>
+          <a class="button button-light" href="https://www.google.com/maps/search/?api=1&amp;query=24+Harbour+Lane%2C+Sydney+NSW">Open in Maps</a>
+        </div>
+      </section>
+
+      <section class="final-cta section-pad reveal" aria-labelledby="cta-title">
+        <p class="eyebrow">Your table is waiting</p>
+        <h2 id="cta-title">Come in for a coffee.<br>Stay for the second.</h2>
+        <p>We will put the kettle on.</p>
+        <a class="text-link" href="#visit">Plan your visit</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#top">Ember <span>&amp;</span> Bean</a>
+      <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+      <p>© <span id="copyright-year">2026</span> Ember &amp; Bean</p>
+    </footer>
+
+    <div class="mobile-bar" aria-label="Quick contact">
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=24+Harbour+Lane%2C+Sydney+NSW">Directions</a>
+      <a href="tel:+61290000000">Call</a>
+    </div>
+  </body>
+</html>
