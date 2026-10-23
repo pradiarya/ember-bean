@@ -66,6 +66,13 @@ document.querySelector(".dialog-close").addEventListener("click", () => {
 galleryDialog.addEventListener("click", (event) => {
   if (event.target === galleryDialog) galleryDialog.close();
 });
+
+document.querySelectorAll(".hero-image, .media-frame img").forEach((image) => {
+  const removeImage = () => image.classList.contains("hero-image") ? image.remove() : image.closest(".media-frame")?.remove();
+  image.addEventListener("error", removeImage, { once: true });
+  if (image.complete && image.naturalWidth === 0) removeImage();
+});
+
 const revealItems = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver((entries, observer) => {
